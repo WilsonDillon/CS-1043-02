@@ -1,17 +1,8 @@
-import java.text.NumberFormat;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Lab2ExactChange {  
 	   
    public static void main( String[] args ) {
-		   
-	   final double PENNY_VALUE = 0.01;
-	   final double NICKEL_VALUE = 0.05;
-	   final double DIME_VALUE = 0.1;
-	   final double QUARTER_VALUE = 0.25;
-	   final double HALFDOLLAR_VALUE = 0.5;
-	   final double DOLLAR_VALUE = 1.0;
 	   
 
 	   Scanner console = new Scanner ( System.in );
