@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Interstate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner console = new Scanner( System.in );
+		
+		var hw = console.next();
+		var type = "";
+		var dir = "";
+		
+		if ( hw.length() < 3) {
+			type = "primary";
+		}
+		else if (hw.length() == 3) {
+			type = "auxiliary";
+		}
+		System.out.println("The _ is " + type);
+		
+		console.close();
+	}
+
+}

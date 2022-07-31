@@ -1,0 +1,20 @@
+
+public class ForEachLoop {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int [][] Array2D = {
+				{1,2,3},
+				{6,5,4},
+				{7,8,9}
+		};
+		
+		for ( int[] row : Array2D ) {
+			for ( int x : row ) {
+				System.out.printf( "%4d", row );
+			}
+			System.out.println();
+		}
+		
+	}
+}

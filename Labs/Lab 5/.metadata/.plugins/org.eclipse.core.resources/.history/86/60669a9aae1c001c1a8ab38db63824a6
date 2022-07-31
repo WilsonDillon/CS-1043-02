@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class QuizScores {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner console = new Scanner(System.in);
+		
+		double total = 0.0;
+		double min = Double.MAX_VALUE;
+		double max = -Double.MAX_VALUE;
+		double count = 0.0;
+		double avg = 0.0;
+		
+		System.out.println("Enter a score or enter 'stop' to exit:");
+		var input = console.nextLine();
+		
+		while ( input.toLowerCase().equals("stop") == false ) {
+			
+			int score = Integer.parseInt(input.replaceAll("[\\D]", ""));
+			total = total + score;
+			++count;
+			if ( score > max ) {
+				max = score;
+			}
+			if ( score < min ) {
+				min = score;
+			}
+			
+			if ( count > 0 ) {
+				avg = total / count;
+				
+				
+			}
+			
+			input = console.nextLine();
+		}
+		
+		System.out.printf("Sum of quiz scores: %.1f\n", total );
+		System.out.printf("Number of quiz scores: %.1f\n", count );
+		System.out.printf("Average quiz score: %.1f\n", avg );
+		System.out.printf("Maximum quiz score: %.1f\n", max );
+		System.out.printf("Minimum quiz score: %.1f\n", min );
+		System.out.println("Enter a score or enter 'stop' to exit:");
+		console.close();
+	}
+
+}

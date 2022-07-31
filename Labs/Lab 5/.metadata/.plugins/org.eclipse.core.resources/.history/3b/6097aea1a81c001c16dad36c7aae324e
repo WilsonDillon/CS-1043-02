@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class QuizScores {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner console = new Scanner(System.in);
+
+		var input = console.nextLine();
+		
+		double total = 0.0;
+		double min = 100.0;
+		double max = 0.0;
+		int count = 0;
+		
+		while ( input.equals("stop") == false ) {
+			int score = Integer.parseInt(input.replaceAll("[\\D]", ""));
+			total = total + score;
+			System.out.printf("Sum of quiz scores: %.1f\n", total );
+			if ( score < min ) {
+				min = score;
+			}
+			System.out.printf("Minimum of quiz scores: %.1f\n", min );
+			if ( score > max ) {
+				max = score;
+			}
+			System.out.printf("Maximum of quiz scores: %.1f\n", max );
+			count++;
+			System.out.printf("Number of quiz scores: %.1f\n", count );
+			input = console.nextLine();
+		}
+		console.close();
+	}
+
+}

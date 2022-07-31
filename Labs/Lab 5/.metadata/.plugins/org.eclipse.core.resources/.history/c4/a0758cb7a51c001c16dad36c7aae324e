@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class QuizScores {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner console = new Scanner(System.in);
+
+		var input = console.nextLine();
+		
+		int total = 0;
+		
+		while ( input.equals("stop") == false ) {
+			int score = Integer.parseInt(input);
+			total = total + score;
+			System.out.println( total );
+		}
+		console.close();
+	}
+
+}

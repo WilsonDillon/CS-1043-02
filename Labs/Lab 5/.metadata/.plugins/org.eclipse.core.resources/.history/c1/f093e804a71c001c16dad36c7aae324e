@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class QuizScores {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner console = new Scanner(System.in);
+
+		var input = console.nextInt();
+		
+		// int total = 0;
+		double number = input;
+		System.out.println(number);
+		
+		/* while ( input.equals("stop") == false ) {
+			int score = Integer.parseInt(input);
+			total = total + score;
+			System.out.println( total );
+		} */
+		console.close();
+	}
+
+}

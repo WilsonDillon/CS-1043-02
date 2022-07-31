@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Backward {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner console = new Scanner(System.in);
+		
+		String input = console.nextLine();
+		
+		for (int i = input.length(); i == 0; --i) {
+			String c = input.substring(1, i);
+			System.out.println(c);
+		}
+		
+		console.close();
+	}
+}

@@ -1,0 +1,14 @@
+
+public class Freighter extends Ship {
+	
+	private double capacity;
+	
+	public Freighter ( String sName, String sCrew, double sCap ) {
+		super( sName, sCrew);
+		capacity = sCap;
+	}
+	
+	public void setCap (sCap) {
+		capacity = sCap;
+	}
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class NameFormat {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scnr = new Scanner(System.in);
+		
+		var name = scnr.nextLine();
+		
+		String[] split = name.split("\\s+");
+		
+		int fn = name.indexOf(" ");
+		String firstName = name.substring(0, fn);
+		String middleName = name.substring(fn+1, name.length());
+		int mn = middleName.indexOf(" ");
+		String lastName = middleName.substring(mn+1, middleName.length()); 
+		
+		System.out.print(lastName + ", " + firstName + " " + mn);
+		System.out.print(split);
+		
+		scnr.close();
+	}
+}

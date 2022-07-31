@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class NameFormat {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scnr = new Scanner(System.in);
+		
+		var name = scnr.nextLine();
+		System.out.print(name);
+		
+		scnr.close();
+	}
+}

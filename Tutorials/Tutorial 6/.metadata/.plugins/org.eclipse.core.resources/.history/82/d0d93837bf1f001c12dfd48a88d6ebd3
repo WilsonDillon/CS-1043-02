@@ -1,0 +1,14 @@
+
+public class Wedges {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str1 = "";
+		
+		 
+		for (int x = 0; x <= 4; ++x) {
+			str1 = str1 + "*";
+			System.out.println(str1);
+		} 
+	}
+}

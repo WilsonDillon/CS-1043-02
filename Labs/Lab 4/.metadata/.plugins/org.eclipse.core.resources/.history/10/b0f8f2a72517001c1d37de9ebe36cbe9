@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+public class Seasons {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner console = new Scanner( System.in );
+		
+		String month = console.next();
+		int day = console.nextInt();
+		
+		month = month.toLowerCase();
+		
+		if ( month == "march" ||
+			 month == "april" ||
+			 month == "may" ||
+			 month == "june" ) {
+			if ( month == "march" && day < 20 ) {
+				System.out.println("winter");
+			}
+			else if ( month == "june" && day > 20 ) {
+				System.out.println("summer");
+			}
+			else {
+				System.out.println("spring");
+			}
+		}
+		else if ( month == "june" ||
+				  month == "july" ||
+				  month == "august" ||
+				  month == "september" ) {
+			if ( month == "june" && day < 21 ) {
+				System.out.println("spring");
+			}
+			else if ( month == "september" && day > 21 ) {
+				System.out.println("autumn");
+			}
+			else {
+				System.out.println("summer");
+			} 
+		}
+		else if ( month == "september" ||
+				  month == "october" ||
+				  month == "november" ||
+				  month == "december" ) {
+			if ( month == "september" && day < 22 ) {
+				System.out.println("summer");
+			}
+			else if ( month == "december" && day > 20 ) {
+				System.out.println("spring");
+			}
+			else {
+				System.out.println("autumn");
+			} 
+		}
+		else if ( month == "december" ||
+				  month == "januray" ||
+				  month == "february" ||
+				  month == "march" ) {
+			if ( month == "december" && day < 21 ) {
+				System.out.println("autumn");
+			}
+			else if ( month == "march" && day > 20 ) {
+				System.out.println("spring");
+			}
+			else {
+				System.out.println("winter");
+			} 
+		}
+	}
+
+}

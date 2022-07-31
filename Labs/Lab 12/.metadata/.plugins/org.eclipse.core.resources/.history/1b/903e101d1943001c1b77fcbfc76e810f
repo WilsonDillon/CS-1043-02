@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ShipDriver {
+   public static void main( String [] args ){
+
+	   Scanner input = new Scanner( System.in );
+
+	   System.out.printf( "Enter a ship name and crew number: " ); 
+	   String name = input.next();
+	   int crew = input.nextInt();
+	   Ship aship = new Ship(name, crew); 
+	   System.out.println(aship.toString());
+
+	   System.out.printf( "Enter a freighter name, crew number, and capacity: " ); 
+	   name = input.next();
+	   crew = input.nextInt();
+	   double capacity = input.nextDouble();
+	   Freighter afreighter = new Freighter(name, crew, capacity); 
+	   System.out.println(afreighter.toString());
+
+	   System.out.printf( "Enter an ocean liner name, crew number, and passengers: " ); 
+	   name = input.next();
+	   crew = input.nextInt();
+	   int pass = input.nextInt();
+	   Liner aliner = new Liner(name, crew, pass); 
+	   System.out.println(aliner.toString());
+	   
+   }	// end main
+}	// end class 

@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+E:\CS 1043-02\Tutorials\Tutorial 1\.metadata\.plugins\org.eclipse.jdt.core
+1210658807.index
+2047742608.index
+222408422.index
+2380175872.index
+885111921.index
