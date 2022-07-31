@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+ 
 public class Lab2ExactChange {  
 	   
    public static void main( String[] args ) {
